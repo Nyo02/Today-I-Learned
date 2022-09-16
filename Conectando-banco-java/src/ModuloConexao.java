@@ -2,14 +2,8 @@ import java.sql.*;
 
 public class ModuloConexao {
 
-<<<<<<< HEAD
-    public static Connection conector() {
-
-=======
- 
     public static Connection conector(){
-       
->>>>>>> refs/remotes/origin/main
+      
         Connection conexao = null;
 
         try {
