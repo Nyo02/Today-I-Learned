@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio4</title>
+</head>
+<body>
+    <script>
+        var idades = new Array();
+        var i=0
+        var menores = 0
+        var maiores = 0
+
+        idades[i]=Number(window.prompt('digite uma idade'))        
+        
+
+        var opc = window.prompt('deseja digitar outra idade? [n=não]')
+        while(opc!='n'){
+            i++
+            idades[i]=Number(window.prompt('Digite mais uma idade'))
+            opc = window.prompt('deseja digitar outra idade? [n=não]')
+
+        }
+        for(var k=0;k<idades.length;k++){
+            if(idades[k]<18){
+                menores++
+            }else maiores++
+            
+        }
+        window.alert(`Maiores de idade:${maiores}\n Menores de idade: ${menores}`)
+
+    </script>
+    
+</body>
+</html>

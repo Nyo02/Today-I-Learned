@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+
+<body>
+    <script>
+
+        var cont = 0
+        var numeros = new Array();
+
+        do {
+             numeros[cont]= Number(window.prompt('digite um número'))
+             cont++
+
+        }while(cont<5)
+
+        for(var i=0;i<numeros.length;i++){
+            var quadrado = numeros[i]*numeros[i]
+            window.alert(`Quadrado de ${numeros[i]}, é ${quadrado}`)
+        }
+
+    </script>
+</body>
+
+</html>

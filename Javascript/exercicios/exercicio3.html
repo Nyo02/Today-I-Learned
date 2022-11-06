@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+</head>
+
+<body>
+    <script>
+        var k = 0
+        var maior
+        var numeros = new Array();
+        do {
+            numeros[k] = Number(window.prompt('digite um numero'))
+            k++
+        } while (k < 2)
+
+        if (numeros[0] < numeros[1]) {
+            maior = numeros[1]
+        } else {
+            maior = numeros[0]
+        }
+        window.alert(`Entre ${numeros[0]} e ${numeros[1]} o maior número é ${maior}`)
+
+    </script>
+
+</body>
+
+</html>
